@@ -93,15 +93,15 @@ window.landingContent = {
   },
   instructor: {
     name: "Mateo Cardenas Gonzalez",
-    role: "Geólogo | 10 años de experiencia en minería | VIAS3D",
+    role: "Geólogo | Technical Sales Engineer en VIAS3D",
     bio:
-      "Geólogo con 10 años de experiencia en minería, con trayectoria en modelamiento geológico 3D, estimación de recursos, diseño y planeamiento minero, geotecnia aplicada y acompañamiento técnico a operaciones y proyectos. Actualmente se desempeña como Technical Sales Engineer en VIAS3D Colombia S.A.S., apoyando compañías del sector en procesos de capacitación, transformación digital e implementación de soluciones para distintas disciplinas del ciclo minero.",
+      "Geólogo con 10 años de experiencia en minería, con trayectoria en modelamiento geológico 3D, estimación de recursos, diseño y planeamiento minero, geotecnia aplicada y evaluación técnica de proyectos. Actualmente se desempeña como Technical Sales Engineer en VIAS3D Colombia S.A.S., acompañando compañías en la adopción de soluciones GEOVIA y roles de plataforma sobre 3DEXPERIENCE, desarrollando demostraciones técnicas, workshops, capacitaciones e implementación de flujos para áreas de geología, planeamiento y operación. También impulsa procesos de automatización y eficiencia digital con herramientas de programación como Python, SQL y TCL.",
     photo: "mateo-cardenas.png",
     experience: [
-      "10 años de experiencia en minería, acompañando proyectos desde geología y recursos hasta diseño y planeamiento minero.",
-      "Experiencia en modelamiento geológico 3D, estimación de recursos y evaluación técnica de proyectos mineros.",
-      "Trabajo en diseño minero, geotecnia aplicada y optimización de flujos de trabajo para equipos técnicos.",
-      "Capacitación e implementación de soluciones digitales para áreas de geología, planeamiento, producción y transformación digital."
+      "En VIAS3D lidera acompañamiento técnico-comercial para soluciones GEOVIA y roles de plataforma sobre 3DEXPERIENCE aplicados a geología, planeamiento y operación minera.",
+      "Ha trabajado con herramientas como Surpac, MineSched y Whittle en procesos de demostración, capacitación, implementación y adopción por parte de equipos técnicos.",
+      "Cuenta con experiencia en modelamiento geológico 3D, estimación de recursos, evaluación técnica de proyectos, diseño y planeamiento minero y geotecnia aplicada.",
+      "Actualmente desarrolla automatizaciones y mejoras de flujo con Python, SQL y TCL para hacer más eficiente el trabajo técnico y la integración de datos."
     ],
     contacts: [
       {
@@ -115,8 +115,8 @@ window.landingContent = {
         href: "https://wa.me/573023257869?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20curso%20Surpac%20Pit%20%26%20Dump%20Design."
       },
       {
-        label: "Experiencia",
-        value: "10 años en minería"
+        label: "Rol actual",
+        value: "Technical Sales Engineer"
       },
       {
         label: "Empresa",
@@ -124,12 +124,12 @@ window.landingContent = {
       }
     ],
     credentials: [
+      "Roles de plataforma 3DEXPERIENCE",
+      "GEOVIA Surpac, MineSched y Whittle",
       "Geología y modelamiento 3D",
       "Estimación de recursos",
       "Diseño y planeamiento minero",
-      "Geotecnia aplicada",
-      "Evaluación de proyectos",
-      "Transformación digital minera"
+      "Python, SQL y TCL"
     ]
   },
   cta: {

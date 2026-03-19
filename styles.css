@@ -175,6 +175,7 @@ iframe {
 
 .section {
   padding: 52px 0;
+  scroll-margin-top: 112px;
 }
 
 .hero {
@@ -585,19 +586,29 @@ iframe {
 .portrait-content {
   position: absolute;
   inset: auto 20px 20px 20px;
+  display: grid;
+  gap: 10px;
+  max-width: calc(100% - 40px);
   color: #f9f4ed;
 }
 
 .portrait-content h2 {
-  margin: 14px 0 8px;
+  margin: 0;
   font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(1.9rem, 3.6vw, 2.8rem);
+  font-size: clamp(1.8rem, 3.4vw, 2.55rem);
   letter-spacing: -0.04em;
+  max-width: 8ch;
+  text-wrap: balance;
+  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
 }
 
 .instructor-role {
+  margin: 0;
   font-size: 1.02rem;
+  line-height: 1.45;
+  max-width: 24ch;
   color: rgba(249, 244, 237, 0.86);
+  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
 }
 
 .instructor-copy {
@@ -612,7 +623,7 @@ iframe {
 
 .instructor-meta-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(250px, 0.82fr) minmax(0, 1.18fr);
   gap: 16px;
 }
 
@@ -625,20 +636,22 @@ iframe {
 .contact-chips,
 .credentials {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
 .contact-chips {
+  grid-template-columns: 1fr;
   margin-top: 0;
 }
 
 .credentials {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 0;
 }
 
 .contact-chip,
 .credential-chip {
+  min-height: 92px;
   padding: 12px 14px;
   border-radius: 18px;
   color: var(--forest);
@@ -649,7 +662,10 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   gap: 4px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
   background: rgba(183, 95, 44, 0.08);
 }
 
@@ -657,6 +673,7 @@ iframe {
   display: grid;
   place-items: center;
   text-align: center;
+  line-height: 1.35;
   background: rgba(40, 71, 63, 0.08);
 }
 
