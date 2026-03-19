@@ -555,8 +555,10 @@ iframe {
   max-width: 220px;
   aspect-ratio: 3.8 / 4.6;
   min-height: 0;
+  grid-column: 2;
+  grid-row: 1;
   align-self: start;
-  justify-self: start;
+  justify-self: end;
   border-radius: 22px;
   overflow: hidden;
   border: 1px solid rgba(40, 71, 63, 0.12);
@@ -583,6 +585,8 @@ iframe {
 
 .instructor-copy {
   display: grid;
+  grid-column: 1;
+  grid-row: 1;
   gap: 14px;
   align-self: start;
   padding-top: 4px;
@@ -926,6 +930,12 @@ iframe {
   .program-side,
   .instructor-meta-grid {
     grid-template-columns: 1fr;
+  }
+
+  .portrait-shell,
+  .instructor-copy {
+    grid-column: auto;
+    grid-row: auto;
   }
 
   .cta-actions {
