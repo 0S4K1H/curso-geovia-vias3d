@@ -110,7 +110,7 @@ window.landingContent = {
     role: "Geólogo | Technical Sales Engineer en VIAS3D | Especialista GEOVIA",
     bio:
       "Geólogo con experiencia en modelamiento geológico 3D, estimación de recursos y proyectos mineros. Actualmente se desempeña como Technical Sales Engineer en VIAS3D Colombia S.A.S., asesorando proyectos con GEOVIA y 3DEXPERIENCE de Dassault Systèmes y capacitando equipos técnicos en soluciones como Surpac, MineSched y Whittle.",
-    photo: "mateo-cardenas.png",
+    photo: "assets/mateo-cardenas.png",
     experience: [
       "Capacitación a equipos técnicos en Surpac, MineSched y Whittle.",
       "Implementación de soluciones GEOVIA y 3DEXPERIENCE en minería y geotecnia.",
@@ -157,13 +157,18 @@ window.landingContent = {
     kicker: "Google Forms",
     title: "Completa aquí el registro del curso",
     description:
-      "Completa el formulario para registrar tu interés en el curso de forma simple y profesional.",
+      "Regístrate en menos de un minuto y recibe la información del curso de forma ordenada y profesional.",
     publicUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLScJI_mJ3bmdPif4S4uB-06GJDdNQsxyv-QxSB1ItnC-gO7NgQ/viewform",
-    embedUrl:
-      "https://docs.google.com/forms/d/e/1FAIpQLScJI_mJ3bmdPif4S4uB-06GJDdNQsxyv-QxSB1ItnC-gO7NgQ/viewform?embedded=true",
+    embedUrl: "",
+    embedInline: false,
+    bullets: [
+      "Registro rápido con acceso desde cualquier dispositivo.",
+      "Respuestas centralizadas en Google Forms y Google Sheets.",
+      "Seguimiento más limpio para inscripción, contacto y cierre."
+    ],
     note:
-      "Las respuestas quedarán organizadas en Google Forms y Google Sheets, donde el equipo podrá revisarlas, recibir notificaciones y descargar el CSV cuando lo necesite."
+      "Después de completar el formulario, el equipo podrá revisar respuestas, activar notificaciones y descargar la base en CSV cuando lo necesite."
   },
   links: {
     whatsappNumber: "573023257869",

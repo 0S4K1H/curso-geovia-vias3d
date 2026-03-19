@@ -215,7 +215,7 @@ function renderRegistration(registration) {
     return;
   }
 
-  if (registration?.embedUrl) {
+  if (registration?.embedInline && registration?.embedUrl) {
     embed.innerHTML = `
       <iframe
         src="${registration.embedUrl}"
@@ -228,10 +228,16 @@ function renderRegistration(registration) {
   }
 
   embed.innerHTML = `
-    <div class="form-placeholder">
+    <div class="form-preview">
       <div>
-        <strong>Formulario listo para conectar</strong>
-        <p>Pega aquí el enlace embebido de Google Forms en <code>content.js</code> para mostrarlo directamente dentro de la landing.</p>
+        <span class="form-preview-badge">Registro externo</span>
+        <strong>Formulario optimizado para una landing profesional</strong>
+        <p>Para mantener una composición limpia y equilibrada, el formulario se abre en una pestaña aparte y no se incrusta completo dentro de la página.</p>
+        <ul class="form-preview-list">
+          ${(registration?.bullets || [])
+            .map((item) => `<li>${item}</li>`)
+            .join("")}
+        </ul>
       </div>
     </div>
   `;
