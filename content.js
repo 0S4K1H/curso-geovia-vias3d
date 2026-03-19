@@ -157,9 +157,11 @@ window.landingContent = {
     kicker: "Google Forms",
     title: "Completa aquí el registro del curso",
     description:
-      "Conecta aquí tu formulario de Google para captar registros de forma simple y profesional, sin depender de un backend propio.",
-    publicUrl: "https://forms.gle/tu-formulario-publico",
-    embedUrl: "",
+      "Completa el formulario para registrar tu interés en el curso de forma simple y profesional.",
+    publicUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLScJI_mJ3bmdPif4S4uB-06GJDdNQsxyv-QxSB1ItnC-gO7NgQ/viewform",
+    embedUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLScJI_mJ3bmdPif4S4uB-06GJDdNQsxyv-QxSB1ItnC-gO7NgQ/viewform?embedded=true",
     note:
       "Las respuestas quedarán organizadas en Google Forms y Google Sheets, donde el equipo podrá revisarlas, recibir notificaciones y descargar el CSV cuando lo necesite."
   },
