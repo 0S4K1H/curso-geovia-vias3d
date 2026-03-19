@@ -384,7 +384,12 @@ iframe {
 
 .program-side {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
+}
+
+.info-card-wide {
+  grid-column: 1 / -1;
 }
 
 .registration-layout {
@@ -605,6 +610,18 @@ iframe {
   margin-top: 0;
 }
 
+.instructor-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.compact-info-card {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+}
+
 .contact-chips,
 .credentials {
   display: grid;
@@ -667,7 +684,7 @@ iframe {
 .cta-list {
   display: grid;
   gap: 12px;
-  margin: 22px 0 0;
+  margin: 16px 0 0;
   padding: 0;
   list-style: none;
   color: var(--ink-soft);
@@ -888,6 +905,11 @@ iframe {
 
   .cards-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .program-side,
+  .instructor-meta-grid {
+    grid-template-columns: 1fr;
   }
 
   .cta-actions {

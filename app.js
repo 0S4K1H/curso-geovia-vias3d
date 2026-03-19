@@ -252,6 +252,7 @@ function applyLinks(links) {
   const whatsappUrl = makeWhatsAppUrl(links?.whatsappNumber, links?.whatsappMessage);
   const paymentUrl = links?.paymentUrl || "#";
   const paymentNote = document.getElementById("payment-note");
+  const ctaActions = document.getElementById("cta-actions");
   const hasRealPaymentUrl =
     paymentUrl && paymentUrl !== "#" && !paymentUrl.includes("example.com");
 
@@ -273,6 +274,10 @@ function applyLinks(links) {
   if (paymentNote) {
     paymentNote.style.display =
       hasRealPaymentUrl && paymentNote.textContent.trim() ? "block" : "none";
+  }
+
+  if (ctaActions) {
+    ctaActions.style.display = hasRealPaymentUrl ? "flex" : "none";
   }
 }
 
@@ -315,8 +320,6 @@ function applyContent() {
   renderList("course-objectives", content.program?.objectives);
   renderList("program-outcomes", content.program?.outcomes);
   renderList("methodology-list", content.program?.methodology);
-  renderList("prerequisites-list", content.program?.prerequisites);
-  renderList("course-specs-list", content.program?.specs);
 
   setText("video-description", content.video?.description);
   renderVideo(content.video);
@@ -339,6 +342,7 @@ function applyContent() {
   setText("cta-title", content.cta?.title);
   setText("cta-text", content.cta?.text);
   setText("payment-note", content.cta?.paymentNote);
+  renderList("cta-points", content.cta?.points);
 
   renderRegistration(content.registration);
 

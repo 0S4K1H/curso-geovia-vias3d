@@ -70,23 +70,9 @@ window.landingContent = {
     ],
     methodology: [
       "Demostración guiada paso a paso dentro de Surpac.",
-      "Enfoque técnico sobre herramientas y secuencia de trabajo.",
-      "Curso corto y concentrado en ejecución práctica.",
-      "Aplicación directa sobre data set del entrenamiento."
-    ],
-    prerequisites: [
-      "Conocimiento básico de Surpac.",
-      "Se recomienda haber visto el curso Surpac Essentials.",
-      "GEOVIA Surpac licenciado e instalado en el computador.",
-      "Tener disponible el data set del curso."
-    ],
-    specs: [
-      "Industria: Infrastructure, Energy & Materials.",
-      "Roles: GEOVIA Mine Designer y GEOVIA Mine Contributor.",
-      "Brand: GEOVIA.",
-      "Available releases: Surpac 2024, 2023 y 2021.",
-      "Discipline: Surpac, Geosciences.",
-      "Level: Fundamental."
+      "Explicación clara de la lógica de diseño y de la secuencia de trabajo.",
+      "Curso pensado para una curva de aprendizaje amigable y aplicable.",
+      "Aplicación directa sobre un data set del entrenamiento."
     ]
   },
   video: {
@@ -107,21 +93,21 @@ window.landingContent = {
   },
   instructor: {
     name: "Mateo Cardenas Gonzalez",
-    role: "Geólogo | Technical Sales Engineer en VIAS3D | Especialista GEOVIA",
+    role: "Geólogo | 10 años de experiencia en minería | VIAS3D",
     bio:
-      "Geólogo con experiencia en modelamiento geológico 3D, estimación de recursos y proyectos mineros. Actualmente se desempeña como Technical Sales Engineer en VIAS3D Colombia S.A.S., asesorando proyectos con GEOVIA y 3DEXPERIENCE de Dassault Systèmes y capacitando equipos técnicos en soluciones como Surpac, MineSched y Whittle.",
+      "Geólogo con 10 años de experiencia en minería, con trayectoria en modelamiento geológico 3D, estimación de recursos, diseño y planeamiento minero, geotecnia aplicada y acompañamiento técnico a operaciones y proyectos. Actualmente se desempeña como Technical Sales Engineer en VIAS3D Colombia S.A.S., apoyando compañías del sector en procesos de capacitación, transformación digital e implementación de soluciones para distintas disciplinas del ciclo minero.",
     photo: "mateo-cardenas.png",
     experience: [
-      "Capacitación a equipos técnicos en Surpac, MineSched y Whittle.",
-      "Implementación de soluciones GEOVIA y 3DEXPERIENCE en minería y geotecnia.",
-      "Experiencia en modelamiento geológico 3D y estimación de recursos.",
-      "Automatización de flujos de trabajo con Python, SQL y TCL."
+      "10 años de experiencia en minería, acompañando proyectos desde geología y recursos hasta diseño y planeamiento minero.",
+      "Experiencia en modelamiento geológico 3D, estimación de recursos y evaluación técnica de proyectos mineros.",
+      "Trabajo en diseño minero, geotecnia aplicada y optimización de flujos de trabajo para equipos técnicos.",
+      "Capacitación e implementación de soluciones digitales para áreas de geología, planeamiento, producción y transformación digital."
     ],
     contacts: [
       {
         label: "Email",
-        value: "lmcardenas.gonzalez@gmail.com",
-        href: "mailto:lmcardenas.gonzalez@gmail.com"
+        value: "mcardenas@vias3d.com",
+        href: "mailto:mcardenas@vias3d.com"
       },
       {
         label: "WhatsApp",
@@ -129,8 +115,8 @@ window.landingContent = {
         href: "https://wa.me/573023257869?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20curso%20Surpac%20Pit%20%26%20Dump%20Design."
       },
       {
-        label: "Ubicación",
-        value: "Manizales, Caldas"
+        label: "Experiencia",
+        value: "10 años en minería"
       },
       {
         label: "Empresa",
@@ -138,18 +124,23 @@ window.landingContent = {
       }
     ],
     credentials: [
-      "GEOVIA Surpac",
-      "Pit design y waste dump design",
-      "Modelamiento geológico 3D",
+      "Geología y modelamiento 3D",
       "Estimación de recursos",
-      "MineSched y Whittle",
-      "Python, SQL y TCL"
+      "Diseño y planeamiento minero",
+      "Geotecnia aplicada",
+      "Evaluación de proyectos",
+      "Transformación digital minera"
     ]
   },
   cta: {
     title: "Resuelve tus dudas y avanza con tu inscripción",
     text:
-      "Si quieres validar si este curso encaja con tu perfil, abre el formulario o escríbeme directamente por WhatsApp.",
+      "Aquí puedes revisar el enfoque del curso y dejar tu registro de forma clara, directa y profesional.",
+    points: [
+      "Recibe información completa sobre modalidad, alcance y dinámica del curso.",
+      "Deja tus datos para continuar con el proceso de inscripción de forma ordenada.",
+      "Accede a un canal de contacto directo desde el botón flotante de WhatsApp."
+    ],
     paymentNote: ""
   },
   registration: {
