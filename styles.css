@@ -542,79 +542,74 @@ iframe {
 
 .instructor-card {
   display: grid;
-  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
-  gap: 22px;
+  grid-template-columns: minmax(220px, 0.62fr) minmax(0, 1.38fr);
+  gap: 28px;
   align-items: start;
   padding: 24px;
   border-radius: var(--radius-xl);
 }
 
-.portrait-shell {
-  position: relative;
-  min-height: 420px;
-  aspect-ratio: 4 / 5;
-  border-radius: calc(var(--radius-xl) - 4px);
-  overflow: hidden;
-  background: linear-gradient(135deg, rgba(40, 71, 63, 1) 0%, rgba(28, 55, 48, 1) 42%, rgba(183, 95, 44, 0.86) 100%);
+.portrait-column {
+  display: grid;
+  align-content: start;
 }
 
-.portrait-photo,
-.portrait-overlay {
-  position: absolute;
-  inset: 0;
+.portrait-shell {
+  position: relative;
+  width: min(100%, 320px);
+  aspect-ratio: 4 / 5;
+  min-height: 0;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(40, 71, 63, 0.12);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 18px 32px rgba(24, 31, 27, 0.1);
 }
 
 .portrait-photo {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 18%;
-  filter: saturate(0.92) contrast(1.02);
+  object-position: center 12%;
+  filter: saturate(0.98) contrast(1.02);
 }
 
 .portrait-overlay {
-  background: linear-gradient(180deg, rgba(13, 20, 18, 0.02) 20%, rgba(13, 20, 18, 0.78) 100%);
+  display: none;
 }
 
 .portrait-ring {
-  position: absolute;
-  inset: 20px;
-  border-radius: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.portrait-content {
-  position: absolute;
-  inset: auto 20px 20px 20px;
-  display: grid;
-  gap: 10px;
-  max-width: calc(100% - 40px);
-  color: #f9f4ed;
-}
-
-.portrait-content h2 {
-  margin: 0;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(1.8rem, 3.4vw, 2.55rem);
-  letter-spacing: -0.04em;
-  max-width: 8ch;
-  text-wrap: balance;
-  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
-}
-
-.instructor-role {
-  margin: 0;
-  font-size: 1.02rem;
-  line-height: 1.45;
-  max-width: 24ch;
-  color: rgba(249, 244, 237, 0.86);
-  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  display: none;
 }
 
 .instructor-copy {
   display: grid;
   gap: 18px;
   align-self: start;
+}
+
+.instructor-header {
+  display: grid;
+  gap: 10px;
+}
+
+.instructor-header h2 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.1rem, 4vw, 3.1rem);
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+  color: var(--ink);
+  max-width: 10ch;
+  text-wrap: balance;
+}
+
+.instructor-role {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--forest);
 }
 
 .instructor-evidence {
