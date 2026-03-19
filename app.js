@@ -235,14 +235,9 @@ function renderRegistration(registration) {
   embed.innerHTML = `
     <div class="form-preview">
       <div>
-        <span class="form-preview-badge">Registro rapido</span>
-        <strong>Abre el formulario y deja tus datos</strong>
-        <p>El registro se completa en Google Forms para mantener la landing visualmente limpia y facilitar el seguimiento de contactos.</p>
-        <ul class="form-preview-list">
-          ${(registration?.bullets || [])
-            .map((item) => `<li>${item}</li>`)
-            .join("")}
-        </ul>
+        <span class="form-preview-badge">Registro oficial</span>
+        <strong>Abre el formulario y completa tus datos</strong>
+        <p>Serás dirigido al formulario del curso para registrar tu interés y continuar con la inscripción.</p>
       </div>
     </div>
   `;
@@ -256,7 +251,7 @@ function applyLinks(links) {
   const hasRealPaymentUrl =
     paymentUrl && paymentUrl !== "#" && !paymentUrl.includes("example.com");
 
-  ["nav-whatsapp", "hero-whatsapp", "cta-whatsapp", "footer-whatsapp", "floating-whatsapp"].forEach((id) => {
+  ["nav-whatsapp", "hero-whatsapp", "footer-whatsapp", "floating-whatsapp"].forEach((id) => {
     const element = document.getElementById(id);
     if (element) {
       element.href = whatsappUrl;

@@ -133,30 +133,26 @@ window.landingContent = {
     ]
   },
   cta: {
-    title: "Resuelve tus dudas y avanza con tu inscripción",
+    title: "Avanza con tu inscripción",
     text:
-      "Aquí puedes revisar el enfoque del curso y dejar tu registro de forma clara, directa y profesional.",
+      "Completa el registro para recibir la información del curso y continuar con el proceso de inscripción de forma clara y profesional.",
     points: [
-      "Recibe información completa sobre modalidad, alcance y dinámica del curso.",
-      "Deja tus datos para continuar con el proceso de inscripción de forma ordenada.",
-      "Accede a un canal de contacto directo desde el botón flotante de WhatsApp."
+      "Recibe los detalles del curso en un solo paso.",
+      "Comparte tus datos de contacto de forma clara y ordenada.",
+      "Continúa el proceso de inscripción con una ruta simple y profesional."
     ],
     paymentNote: ""
   },
   registration: {
-    kicker: "Google Forms",
-    title: "Completa aquí el registro del curso",
+    kicker: "Registro",
+    title: "Completa aquí tu registro",
     description:
-      "Abre el formulario y registra tu interés en menos de un minuto.",
+      "Abre el formulario oficial y registra tu interés en menos de un minuto.",
     publicUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLScJI_mJ3bmdPif4S4uB-06GJDdNQsxyv-QxSB1ItnC-gO7NgQ/viewform",
     embedUrl: "",
     embedInline: false,
-    bullets: [
-      "Registro rápido desde cualquier dispositivo.",
-      "Respuestas organizadas para seguimiento comercial.",
-      "Proceso limpio y coherente con la landing."
-    ],
+    bullets: [],
     note: ""
   },
   links: {
