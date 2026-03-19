@@ -91,6 +91,14 @@ window.landingContent = {
     note:
       "Si el prospecto identifica que este contenido encaja con su necesidad técnica y su nivel actual, este es el punto correcto para pasar al registro."
   },
+  payment: {
+    badge: "Pago e inscripción",
+    title: "Reserva tu cupo desde un acceso claro y directo",
+    description:
+      "Si este curso ya encaja con tu perfil, aquí tienes la forma más rápida de avanzar con la inscripción sin perder el contexto de la página.",
+    note:
+      "Pago directo cuando conectes tu pasarela o acompañamiento por WhatsApp para enviarte el enlace y cerrar tu inscripción."
+  },
   instructor: {
     name: "Mateo Cardenas Gonzalez",
     role: "Geólogo | Technical Sales Engineer en VIAS3D",
@@ -141,7 +149,8 @@ window.landingContent = {
       "Comparte tus datos de contacto de forma clara y ordenada.",
       "Continúa el proceso de inscripción con una ruta simple y profesional."
     ],
-    paymentNote: ""
+    paymentNote:
+      "Si prefieres, también puedes solicitar el enlace de pago y resolver cualquier duda por WhatsApp."
   },
   registration: {
     kicker: "Registro",
@@ -158,6 +167,8 @@ window.landingContent = {
   links: {
     whatsappNumber: "573023257869",
     whatsappMessage: "Hola Mateo, quiero información sobre el curso Surpac Pit & Dump Design.",
+    paymentMessage:
+      "Hola Mateo, quiero reservar mi cupo y recibir el enlace de pago del curso Surpac Pit & Dump Design.",
     paymentUrl: "https://example.com/tu-enlace-de-pago"
   },
   footer: {

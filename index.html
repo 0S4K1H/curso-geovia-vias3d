@@ -34,9 +34,14 @@
         <a href="#inscripcion">Inscripción</a>
       </nav>
 
-      <a class="btn btn-ghost" id="nav-whatsapp" href="#inscripcion" target="_blank" rel="noreferrer">
-        WhatsApp
-      </a>
+      <div class="topbar-actions">
+        <a class="btn btn-primary" id="nav-payment" href="#inscripcion" target="_blank" rel="noreferrer">
+          Pagar
+        </a>
+        <a class="btn btn-ghost" id="nav-whatsapp" href="#inscripcion" target="_blank" rel="noreferrer">
+          WhatsApp
+        </a>
+      </div>
     </header>
 
     <main>
@@ -50,7 +55,7 @@
 
           <div class="hero-actions">
             <a class="btn btn-primary" id="hero-payment" href="#inscripcion" target="_blank" rel="noreferrer">
-              Reservar cupo
+              Pagar mi cupo
             </a>
             <a class="btn btn-secondary" id="hero-whatsapp" href="#inscripcion" target="_blank" rel="noreferrer">
               Hablar por WhatsApp
@@ -86,6 +91,27 @@
           <div class="hero-panel-card hero-panel-accent">
             <p class="panel-label">Este entrenamiento te ayuda a</p>
             <ul class="simple-list" id="target-audience"></ul>
+          </div>
+
+          <div class="hero-panel-card payment-panel">
+            <div class="payment-panel-copy">
+              <p class="panel-label" id="payment-badge">Pago e inscripción</p>
+              <h3 id="payment-title">Reserva tu cupo desde un acceso claro y directo</h3>
+              <p id="payment-description">
+                Si este curso ya encaja con tu perfil, aquí tienes la forma más rápida de avanzar con la inscripción.
+              </p>
+            </div>
+            <div class="payment-panel-actions">
+              <a class="btn btn-primary btn-large" id="panel-payment" href="#inscripcion" target="_blank" rel="noreferrer">
+                Pagar ahora
+              </a>
+              <a class="btn btn-secondary" id="panel-program" href="#programa">
+                Ver programa
+              </a>
+            </div>
+            <p class="payment-panel-note" id="payment-note-hero">
+              Pago directo o acompañamiento personal por WhatsApp para completar tu inscripción.
+            </p>
           </div>
         </aside>
       </section>

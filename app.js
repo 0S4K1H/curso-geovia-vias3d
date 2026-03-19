@@ -246,10 +246,15 @@ function renderRegistration(registration) {
 function applyLinks(links) {
   const whatsappUrl = makeWhatsAppUrl(links?.whatsappNumber, links?.whatsappMessage);
   const paymentUrl = links?.paymentUrl || "#";
+  const paymentFallbackUrl = makeWhatsAppUrl(
+    links?.whatsappNumber,
+    links?.paymentMessage || "Hola, quiero reservar mi cupo y recibir el enlace de pago."
+  );
   const paymentNote = document.getElementById("payment-note");
   const ctaActions = document.getElementById("cta-actions");
   const hasRealPaymentUrl =
     paymentUrl && paymentUrl !== "#" && !paymentUrl.includes("example.com");
+  const resolvedPaymentUrl = hasRealPaymentUrl ? paymentUrl : paymentFallbackUrl;
 
   ["nav-whatsapp", "hero-whatsapp", "footer-whatsapp", "floating-whatsapp"].forEach((id) => {
     const element = document.getElementById(id);
@@ -258,21 +263,20 @@ function applyLinks(links) {
     }
   });
 
-  ["hero-payment", "cta-payment"].forEach((id) => {
+  ["nav-payment", "hero-payment", "panel-payment", "cta-payment"].forEach((id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.href = hasRealPaymentUrl ? paymentUrl : "#";
-      element.style.display = hasRealPaymentUrl ? "" : "none";
+      element.href = resolvedPaymentUrl;
+      element.style.display = "";
     }
   });
 
   if (paymentNote) {
-    paymentNote.style.display =
-      hasRealPaymentUrl && paymentNote.textContent.trim() ? "block" : "none";
+    paymentNote.style.display = paymentNote.textContent.trim() ? "block" : "none";
   }
 
   if (ctaActions) {
-    ctaActions.style.display = hasRealPaymentUrl ? "flex" : "none";
+    ctaActions.style.display = "flex";
   }
 }
 
@@ -320,6 +324,11 @@ function applyContent() {
   renderVideo(content.video);
   renderList("benefits-list", content.video?.checklist || content.benefits);
   setText("result-text", content.video?.note || content.resultText);
+
+  setText("payment-badge", content.payment?.badge);
+  setText("payment-title", content.payment?.title);
+  setText("payment-description", content.payment?.description);
+  setText("payment-note-hero", content.payment?.note);
 
   setText("instructor-name", content.instructor?.name);
   setText("instructor-role", content.instructor?.role);
