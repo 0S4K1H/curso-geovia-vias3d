@@ -110,7 +110,7 @@ window.landingContent = {
     role: "Geólogo | Technical Sales Engineer en VIAS3D | Especialista GEOVIA",
     bio:
       "Geólogo con experiencia en modelamiento geológico 3D, estimación de recursos y proyectos mineros. Actualmente se desempeña como Technical Sales Engineer en VIAS3D Colombia S.A.S., asesorando proyectos con GEOVIA y 3DEXPERIENCE de Dassault Systèmes y capacitando equipos técnicos en soluciones como Surpac, MineSched y Whittle.",
-    photo: "assets/mateo-cardenas.png",
+    photo: "mateo-cardenas.png",
     experience: [
       "Capacitación a equipos técnicos en Surpac, MineSched y Whittle.",
       "Implementación de soluciones GEOVIA y 3DEXPERIENCE en minería y geotecnia.",
