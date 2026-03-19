@@ -201,11 +201,16 @@ function renderVideo(video) {
 function renderRegistration(registration) {
   const embed = document.getElementById("registration-embed");
   const link = document.getElementById("registration-link");
+  const note = document.getElementById("registration-note");
 
   setText("registration-kicker", registration?.kicker);
   setText("registration-title", registration?.title);
   setText("registration-description", registration?.description);
   setText("registration-note", registration?.note);
+
+  if (note) {
+    note.style.display = registration?.note ? "block" : "none";
+  }
 
   if (link) {
     link.href = registration?.publicUrl || "#";
@@ -230,9 +235,9 @@ function renderRegistration(registration) {
   embed.innerHTML = `
     <div class="form-preview">
       <div>
-        <span class="form-preview-badge">Registro externo</span>
-        <strong>Formulario optimizado para una landing profesional</strong>
-        <p>Para mantener una composición limpia y equilibrada, el formulario se abre en una pestaña aparte y no se incrusta completo dentro de la página.</p>
+        <span class="form-preview-badge">Registro rapido</span>
+        <strong>Abre el formulario y deja tus datos</strong>
+        <p>El registro se completa en Google Forms para mantener la landing visualmente limpia y facilitar el seguimiento de contactos.</p>
         <ul class="form-preview-list">
           ${(registration?.bullets || [])
             .map((item) => `<li>${item}</li>`)
@@ -247,8 +252,10 @@ function applyLinks(links) {
   const whatsappUrl = makeWhatsAppUrl(links?.whatsappNumber, links?.whatsappMessage);
   const paymentUrl = links?.paymentUrl || "#";
   const paymentNote = document.getElementById("payment-note");
+  const hasRealPaymentUrl =
+    paymentUrl && paymentUrl !== "#" && !paymentUrl.includes("example.com");
 
-  ["nav-whatsapp", "hero-whatsapp", "cta-whatsapp", "footer-whatsapp"].forEach((id) => {
+  ["nav-whatsapp", "hero-whatsapp", "cta-whatsapp", "footer-whatsapp", "floating-whatsapp"].forEach((id) => {
     const element = document.getElementById(id);
     if (element) {
       element.href = whatsappUrl;
@@ -258,12 +265,14 @@ function applyLinks(links) {
   ["hero-payment", "cta-payment"].forEach((id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.href = paymentUrl;
+      element.href = hasRealPaymentUrl ? paymentUrl : "#";
+      element.style.display = hasRealPaymentUrl ? "" : "none";
     }
   });
 
-  if (paymentNote && paymentUrl !== "#") {
-    paymentNote.style.display = paymentUrl.includes("example.com") ? "block" : "none";
+  if (paymentNote) {
+    paymentNote.style.display =
+      hasRealPaymentUrl && paymentNote.textContent.trim() ? "block" : "none";
   }
 }
 

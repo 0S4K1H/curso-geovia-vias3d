@@ -110,7 +110,7 @@ window.landingContent = {
     role: "Geólogo | Technical Sales Engineer en VIAS3D | Especialista GEOVIA",
     bio:
       "Geólogo con experiencia en modelamiento geológico 3D, estimación de recursos y proyectos mineros. Actualmente se desempeña como Technical Sales Engineer en VIAS3D Colombia S.A.S., asesorando proyectos con GEOVIA y 3DEXPERIENCE de Dassault Systèmes y capacitando equipos técnicos en soluciones como Surpac, MineSched y Whittle.",
-    photo: "assets/mateo-cardenas.png",
+    photo: "mateo-cardenas.png",
     experience: [
       "Capacitación a equipos técnicos en Surpac, MineSched y Whittle.",
       "Implementación de soluciones GEOVIA y 3DEXPERIENCE en minería y geotecnia.",
@@ -147,28 +147,26 @@ window.landingContent = {
     ]
   },
   cta: {
-    title: "Registra tu interés en el curso Surpac Pit & Dump Design",
+    title: "Resuelve tus dudas y avanza con tu inscripción",
     text:
-      "Completa el formulario para recibir la información del curso, resolver dudas y avanzar en el proceso de inscripción.",
-    paymentNote:
-      "Falta conectar tu enlace de pago real de Mercado Pago, Wompi, PayPal u otra pasarela."
+      "Si quieres validar si este curso encaja con tu perfil, abre el formulario o escríbeme directamente por WhatsApp.",
+    paymentNote: ""
   },
   registration: {
     kicker: "Google Forms",
     title: "Completa aquí el registro del curso",
     description:
-      "Regístrate en menos de un minuto y recibe la información del curso de forma ordenada y profesional.",
+      "Abre el formulario y registra tu interés en menos de un minuto.",
     publicUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLScJI_mJ3bmdPif4S4uB-06GJDdNQsxyv-QxSB1ItnC-gO7NgQ/viewform",
     embedUrl: "",
     embedInline: false,
     bullets: [
-      "Registro rápido con acceso desde cualquier dispositivo.",
-      "Respuestas centralizadas en Google Forms y Google Sheets.",
-      "Seguimiento más limpio para inscripción, contacto y cierre."
+      "Registro rápido desde cualquier dispositivo.",
+      "Respuestas organizadas para seguimiento comercial.",
+      "Proceso limpio y coherente con la landing."
     ],
-    note:
-      "Después de completar el formulario, el equipo podrá revisar respuestas, activar notificaciones y descargar la base en CSV cuando lo necesite."
+    note: ""
   },
   links: {
     whatsappNumber: "573023257869",

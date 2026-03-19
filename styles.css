@@ -391,7 +391,7 @@ iframe {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
   gap: 22px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .section-heading {
@@ -536,15 +536,17 @@ iframe {
 
 .instructor-card {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 26px;
-  padding: 28px;
+  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
+  gap: 22px;
+  align-items: start;
+  padding: 24px;
   border-radius: var(--radius-xl);
 }
 
 .portrait-shell {
   position: relative;
-  min-height: 300px;
+  min-height: 420px;
+  aspect-ratio: 4 / 5;
   border-radius: calc(var(--radius-xl) - 4px);
   overflow: hidden;
   background: linear-gradient(135deg, rgba(40, 71, 63, 1) 0%, rgba(28, 55, 48, 1) 42%, rgba(183, 95, 44, 0.86) 100%);
@@ -560,7 +562,7 @@ iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 18%;
   filter: saturate(0.92) contrast(1.02);
 }
 
@@ -577,14 +579,14 @@ iframe {
 
 .portrait-content {
   position: absolute;
-  inset: auto 24px 24px 24px;
+  inset: auto 20px 20px 20px;
   color: #f9f4ed;
 }
 
 .portrait-content h2 {
   margin: 14px 0 8px;
   font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.9rem, 3.6vw, 2.8rem);
   letter-spacing: -0.04em;
 }
 
@@ -594,49 +596,56 @@ iframe {
 }
 
 .instructor-copy {
-  align-self: center;
+  display: grid;
+  gap: 18px;
+  align-self: start;
 }
 
 .instructor-evidence {
-  margin-top: 22px;
+  margin-top: 0;
 }
 
 .contact-chips,
 .credentials {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
 .contact-chips {
-  margin-top: 22px;
+  margin-top: 0;
 }
 
 .credentials {
-  margin-top: 22px;
+  margin-top: 0;
 }
 
 .contact-chip,
 .credential-chip {
   padding: 12px 14px;
-  border-radius: 999px;
+  border-radius: 18px;
   color: var(--forest);
   border: 1px solid rgba(40, 71, 63, 0.12);
 }
 
 .contact-chip {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
   background: rgba(183, 95, 44, 0.08);
 }
 
 .credential-chip {
+  display: grid;
+  place-items: center;
+  text-align: center;
   background: rgba(40, 71, 63, 0.08);
 }
 
 .contact-chip strong {
   font-family: "Space Grotesk", sans-serif;
-  margin-right: 8px;
+  margin-right: 0;
 }
 
 .contact-chip:hover {
@@ -646,9 +655,9 @@ iframe {
 
 .cta-card {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 24px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: start;
   padding: 30px;
   border-radius: var(--radius-xl);
   background:
@@ -682,24 +691,29 @@ iframe {
 }
 
 .cta-actions {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 14px;
-  justify-items: end;
+  align-items: center;
 }
 
 .cta-note {
   margin: 0;
   font-size: 0.95rem;
-  text-align: right;
+  flex-basis: 100%;
+  text-align: left;
 }
 
 .form-card {
+  display: grid;
+  align-content: start;
+  gap: 16px;
   padding: 30px;
   border-radius: var(--radius-xl);
 }
 
 .form-title {
-  margin: 18px 0 12px;
+  margin: 8px 0 0;
   font-size: clamp(1.7rem, 3vw, 2.4rem);
   font-family: "Space Grotesk", sans-serif;
   letter-spacing: -0.03em;
@@ -712,33 +726,31 @@ iframe {
 }
 
 .form-embed {
-  min-height: 360px;
+  min-height: 300px;
   overflow: hidden;
   border-radius: 22px;
-  margin-top: 24px;
   border: 1px solid rgba(40, 71, 63, 0.12);
   background: rgba(255, 255, 255, 0.65);
 }
 
 .form-embed iframe {
   width: 100%;
-  height: 360px;
+  height: 300px;
   display: block;
   border: 0;
 }
 
 .form-placeholder,
 .form-preview {
-  min-height: 360px;
+  min-height: 300px;
   overflow: hidden;
   border-radius: 22px;
   width: 100%;
   height: 100%;
   border: 0;
-  display: grid;
-  place-items: center;
+  display: block;
   padding: 28px;
-  text-align: center;
+  text-align: left;
   color: var(--forest);
   background:
     linear-gradient(135deg, rgba(40, 71, 63, 0.08) 0%, rgba(183, 95, 44, 0.1) 100%);
@@ -747,9 +759,10 @@ iframe {
 .form-placeholder strong,
 .form-preview strong {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.45rem;
+  line-height: 1.15;
 }
 
 .form-preview-badge {
@@ -774,15 +787,73 @@ iframe {
   text-align: left;
 }
 
+.form-placeholder p,
+.form-preview p {
+  margin: 0;
+  max-width: 40ch;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
 .form-actions {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
-  margin-top: 22px;
+  margin-top: 0;
 }
 
 .form-note {
   margin: 0;
   font-size: 0.95rem;
+}
+
+.floating-chat {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 12px 12px 16px;
+  color: #fff8ef;
+  border-radius: 999px;
+  background: rgba(23, 33, 30, 0.94);
+  box-shadow: 0 20px 38px rgba(24, 31, 27, 0.24);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.floating-chat:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 42px rgba(24, 31, 27, 0.28);
+}
+
+.floating-chat-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.floating-chat-copy strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.96rem;
+}
+
+.floating-chat-copy span {
+  color: rgba(255, 248, 239, 0.78);
+  font-size: 0.8rem;
+}
+
+.floating-chat-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: #fff8ef;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.82rem;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--forest) 100%);
 }
 
 .footer {
@@ -820,11 +891,7 @@ iframe {
   }
 
   .cta-actions {
-    justify-items: start;
-  }
-
-  .cta-note {
-    text-align: left;
+    justify-content: flex-start;
   }
 }
 
@@ -866,7 +933,8 @@ iframe {
   .video-placeholder,
   .video-embed-shell,
   .form-placeholder,
-  .form-preview {
+  .form-preview,
+  .portrait-shell {
     min-height: 280px;
   }
 
@@ -874,8 +942,35 @@ iframe {
     min-height: 220px;
   }
 
+  .contact-chips,
+  .credentials {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-actions,
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-large {
+    width: 100%;
+    min-width: 0;
+  }
+
   .form-embed iframe {
     height: 320px;
+  }
+
+  .floating-chat {
+    right: 14px;
+    bottom: 14px;
+    padding: 10px;
+    border-radius: 22px;
+  }
+
+  .floating-chat-copy {
+    display: none;
   }
 }
 
